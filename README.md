@@ -31,7 +31,9 @@ Brew is the de-facto standard package manager for macOS. We'll install some basi
 # Install git, overriding the system default so we can get frequent updates.
 brew install git
 
-# Install python3, which is used by various code editors and tools. This version should ***NOT*** be used for actually running code we wrote; we leave that to the isolated dev environments.
+# Install python3, which is used by various code editors and tools.
+# This version should ***NOT*** be used for actually running code we wrote; we leave that to the isolated dev environments.
+brew install python3
 ```
 
 ## Set up SSH keys for Github
