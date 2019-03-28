@@ -67,7 +67,7 @@ Visual Studio Code has replaced Sublime Text 3 as the de-facto text editor, and 
 3) Set up our configuration files by symlinking them into the appropriate directories.
 
 ```
-ln -s ~/code/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/code/configs/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ```
 
 ## iTerm2
