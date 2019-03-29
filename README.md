@@ -88,3 +88,6 @@ https://www.google.com/drive/download/backup-and-sync/
 
 ## Boxy Suite (Gmail and Calendar)
 https://www.boxysuite.com/
+
+## Mendeley
+https://www.mendeley.com/download-desktop/
