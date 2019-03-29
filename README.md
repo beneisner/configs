@@ -82,3 +82,6 @@ ln -s ~/code/configs/vscode/settings.json ~/Library/Application\ Support/Code/Us
 iTerm2 is a great terminal replacement for macOS. I'm not sure why but everyone says it is and that's great.
 
 Allow it Accessibility permissions.
+
+## Backup and Sync
+https://www.google.com/drive/download/backup-and-sync/
