@@ -119,11 +119,14 @@ ln -s ~/code/configs/.zshrc ~/.zshrc
 
 ### Oh My ZSH
 
-Oh My ZSH is a package manager for zsh. It's got a lot of stars on github.
+Oh My ZSH is a package manager for zsh. It's got a lot of stars on github. We do a manual installation instead of the normal one so that our zsh file isn't overwritten.
 
 ```
-# Download and install Oh My ZSH. This will change your shell from bash to zsh.
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Download and Oh My zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+
+# Change the default shell to zsh.
+chsh -s /bin/zsh
 ```
 
 #### Oh My ZSH Fonts - Powerline
