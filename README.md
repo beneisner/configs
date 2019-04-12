@@ -85,6 +85,57 @@ iTerm2 is a great terminal replacement for macOS. I'm not sure why but everyone 
 
 Allow it Accessibility permissions.
 
+### iTerm2 Color Schemes
+
+Download some slick iTerm2 color schemes.
+
+```
+cd ~/code
+git clone https://github.com/mbadolato/iTerm2-Color-Schemes
+```
+
+## zsh
+
+zsh is a shell built on top of bash that has some nice features.
+
+```
+# Install zsh.
+brew install zsh
+```
+
+### Oh My ZSH
+
+Oh My ZSH is a package manager for zsh. It's got a lot of stars on github.
+
+```
+# Download and install Oh My ZSH. This will change your shell from bash to zsh.
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+#### Oh My ZSH Fonts - Powerline
+Neat font [link](https://github.com/powerline/fonts).
+```
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+```
+
+#### Syntax highlighting
+Syntax highlighting for zsh [link](https://github.com/zsh-users/zsh-syntax-highlighting).
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+#### Install zsh-autosuggestions
+Autosuggestions that can be completed with the right arrow key.
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+## Set iTerm2 to point to our custom preferences.
+iTerm2 > Preferences > General > Load preferences from a custom folder or URL -> Enable, ~/code/configs/iterm2
+iTerm2 > Preferences > General > Save current settings to folder when iTerm2 quits -> Enable
+
 ## Backup and Sync
 https://www.google.com/drive/download/backup-and-sync/
 
