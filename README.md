@@ -105,6 +105,14 @@ brew install tmux
 ln -s ~/code/configs/.tmux.conf ~/.tmux.conf
 ```
 
+## Powerline
+
+Powerline is going to be useful for tmux and for vim, so let's install it now.
+
+```
+# Install the package.
+pip3 install powerline-status
+```
 
 ## zsh
 
