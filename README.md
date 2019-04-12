@@ -133,8 +133,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 
 ## Set iTerm2 to point to our custom preferences.
-iTerm2 > Preferences > General > Load preferences from a custom folder or URL -> Enable, ~/code/configs/iterm2
-iTerm2 > Preferences > General > Save current settings to folder when iTerm2 quits -> Enable
+* iTerm2 > Preferences > General > Load preferences from a custom folder or URL -> Enable, ~/code/configs/iterm2
+* iTerm2 > Preferences > General > Save current settings to folder when iTerm2 quits -> Enable
 
 ## Backup and Sync
 https://www.google.com/drive/download/backup-and-sync/
