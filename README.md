@@ -94,13 +94,27 @@ cd ~/code
 git clone https://github.com/mbadolato/iTerm2-Color-Schemes
 ```
 
+## tmux
+
+tmux is the best terminal multiplexer out there.
+```
+# Install tmux.
+brew install tmux
+
+# Symlink the config in this directory.
+ln -s ~/code/configs/.tmux.conf ~/.tmux.conf
+```
+
+
 ## zsh
 
 zsh is a shell built on top of bash that has some nice features.
-
 ```
 # Install zsh.
 brew install zsh
+
+# Symlink the zsh config.
+ln -s ~/code/configs/.zshrc ~/.zshrc
 ```
 
 ### Oh My ZSH
@@ -135,6 +149,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ## Set iTerm2 to point to our custom preferences.
 * iTerm2 > Preferences > General > Load preferences from a custom folder or URL -> Enable, ~/code/configs/iterm2
 * iTerm2 > Preferences > General > Save current settings to folder when iTerm2 quits -> Enable
+
 
 ## Backup and Sync
 https://www.google.com/drive/download/backup-and-sync/
