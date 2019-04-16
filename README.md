@@ -170,3 +170,9 @@ https://www.boxysuite.com/
 
 ## Mendeley
 https://www.mendeley.com/download-desktop/
+
+## SSHFS + Fuse
+
+For mounting remote filesystems.
+
+* https://osxfuse.github.io/
