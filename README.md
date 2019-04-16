@@ -174,5 +174,6 @@ https://www.mendeley.com/download-desktop/
 ## SSHFS + Fuse
 
 For mounting remote filesystems.
-
+* brew cask install osxfuse
+* brew install sshfs
 * https://osxfuse.github.io/
