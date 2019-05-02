@@ -70,6 +70,7 @@ Visual Studio Code has replaced Sublime Text 3 as the de-facto text editor, and 
 
 2) Install the following extensions:
     * Python ([ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)): Python language extension.
+    * Bazel ([vscode-bazel](https://marketplace.visualstudio.com/items?itemName=BazelBuild.vscode-bazel&ssr=false)): Bazel extension.
   
 3) Set up our configuration files by symlinking them into the appropriate directories.
 
