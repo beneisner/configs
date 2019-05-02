@@ -162,6 +162,13 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 * iTerm2 > Preferences > General > Load preferences from a custom folder or URL -> Enable, ~/code/configs/iterm2
 * iTerm2 > Preferences > General > Save current settings to folder when iTerm2 quits -> Enable
 
+## Install Bazel
+
+```
+# Install from Homebrew.
+brew tap bazelbuild/tap
+brew install bazelbuild/tap/bazel
+```
 
 ## Backup and Sync
 https://www.google.com/drive/download/backup-and-sync/
