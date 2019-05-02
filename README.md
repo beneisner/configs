@@ -158,9 +158,27 @@ Autosuggestions that can be completed with the right arrow key.
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
+#### Bazel completion
+```
+git clone https://github.com/jackwish/bazel ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/bazel
+```
+
+### Initialize completion/
+
+```
+compinit
+```
+
 ## Set iTerm2 to point to our custom preferences.
 * iTerm2 > Preferences > General > Load preferences from a custom folder or URL -> Enable, ~/code/configs/iterm2
 * iTerm2 > Preferences > General > Save current settings to folder when iTerm2 quits -> Enable
+
+## XCode
+
+```
+sudo xcodebuild -license accept
+```
+
 
 ## Install Bazel
 
@@ -168,6 +186,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # Install from Homebrew.
 brew tap bazelbuild/tap
 brew install bazelbuild/tap/bazel
+```
+
+Install Buildifier.
+```
+https://github.com/bazelbuild/buildtools/blob/master/buildifier/README.md
 ```
 
 ## Backup and Sync
