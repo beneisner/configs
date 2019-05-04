@@ -35,6 +35,9 @@ brew install git
 # This version should ***NOT*** be used for actually running code we wrote;
 # we leave that to the isolated dev environments.
 brew install python3
+
+# Install cmake. It's useful sometimes.
+brew install cmake
 ```
 
 ## Set up SSH keys for Github
