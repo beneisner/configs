@@ -41,6 +41,9 @@ brew install cmake
 
 # Autotools :(
 brew install automake
+
+# Libtool
+brew install libtool
 ```
 
 ## Set up SSH keys for Github
