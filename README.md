@@ -38,6 +38,9 @@ brew install python3
 
 # Install cmake. It's useful sometimes.
 brew install cmake
+
+# Autotools :(
+brew install automake
 ```
 
 ## Set up SSH keys for Github
