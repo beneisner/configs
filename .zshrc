@@ -94,6 +94,9 @@ ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
 
+# Check to see if local zshrc is availble.
+source ~/.zshrc.local
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
