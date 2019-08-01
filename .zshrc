@@ -89,8 +89,12 @@ pastefinish() {
 zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 
-# Use TMUX on every start.
-ZSH_TMUX_AUTOSTART=true
+# Use TMUX on every start, unless we're SSH-ing in.
+if [[ -n $SSH_CONNECTION ]]; then
+  ZSH_TMUX_AUTOSTART=false
+else
+  ZSH_TMUX_AUTOSTART=true
+fi
 
 source $ZSH/oh-my-zsh.sh
 
