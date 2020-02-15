@@ -68,9 +68,10 @@ ENABLE_CORRECTION="true"
 plugins=(
   git
   tmux
-  zsh-syntax-highlighting # It's too slow...
+  zsh-syntax-highlighting
   zsh-autosuggestions
   colored-man-pages
+  bazel
 )
 
 # zsh-syntax-highlighting is really slow on paste, so let's cut it down to size.
@@ -91,6 +92,9 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 
 # Use TMUX on every start, unless we're SSH-ing in.
 if [[ -n $SSH_CONNECTION ]]; then
+  ZSH_TMUX_AUTOSTART=false
+# Use TMUX on every start, except when using the vscode terminal.
+elif [ "$TERM_PROGRAM" = "vscode" ]; then 
   ZSH_TMUX_AUTOSTART=false
 else
   ZSH_TMUX_AUTOSTART=true
