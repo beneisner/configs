@@ -72,6 +72,7 @@ plugins=(
   zsh-autosuggestions
   colored-man-pages
   bazel
+  poetry
 )
 
 # zsh-syntax-highlighting is really slow on paste, so let's cut it down to size.
@@ -130,3 +131,6 @@ source ~/.zshrc.local
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Initialize completions.
+compinit
