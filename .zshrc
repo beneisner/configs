@@ -104,7 +104,14 @@ fi
 source $ZSH/oh-my-zsh.sh
 
 # Check to see if local zshrc is availble.
-source ~/.zshrc.local
+LOCAL_ZSH=~/.zshrc.local
+if test -f "$LOCAL_ZSH"; then
+    source "$LOCAL_ZSH"
+fi
+
+# Export location of powerline.
+export PATH=~/.local/bin/:$PATH
+export POWERLINE_CONFIG_COMMAND=powerline-config
 
 # User configuration
 
