@@ -113,15 +113,21 @@ brew install tmux
 
 # Symlink the config in this directory.
 ln -s ~/code/configs/.tmux.conf ~/.tmux.conf
-```
 
+```
+### tmux plugin manager
+Use the TMUX Plugin Manager [https://github.com/tmux-plugins/tpm](link).
+
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 ## Powerline
 
 Powerline is going to be useful for tmux and for vim, so let's install it now.
 
 ```
 # Install the package.
-pip3 install powerline-status
+pip3 install --user powerline-status
 ```
 
 ## zsh
