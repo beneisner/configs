@@ -101,6 +101,13 @@ else
   ZSH_TMUX_AUTOSTART=true
 fi
 
+# Optional tmux integration with iTerm2, but I don't really like it...
+# if [[ $TERM_PROGRAM = "iTerm.app" ]]; then
+#   ZSH_TMUX_ITERM2=true
+# else
+#   ZSH_TMUX_ITERM2=false
+# fi
+
 source $ZSH/oh-my-zsh.sh
 
 # Check to see if local zshrc is availble.
@@ -141,3 +148,6 @@ export POWERLINE_CONFIG_COMMAND=powerline-config
 
 # Initialize completions.
 compinit
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
