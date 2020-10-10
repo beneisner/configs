@@ -174,6 +174,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 
 #### Bazel completion
+
+TODO: THIS LINK IS BROKEN: FIX.
 ```
 git clone https://github.com/jackwish/bazel ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/bazel
 ```
