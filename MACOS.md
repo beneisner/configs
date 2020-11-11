@@ -12,15 +12,6 @@ Preferences that can be found in System Preferences.
 * System Preferences > Keyboard > Delay until Repeat -> Short
 * Enable System Preferences > Trackpad > Point & Click > Tap to Click
 
-## Spectacle
-
-Install and configure Spectacle, a great window manager for macOS.
-
-* Download [Spectacle](https://www.spectacleapp.com/)
-* Start Spectacle
-    * Allow it Accessibility permissions.
-* Enable Spectacle > Preferences > Launch Spectacle at login
-
 ## Brew
 
 Brew is the de-facto standard package manager for macOS. We'll install some basics, but we don't really want to use brew for day-to-day development, because it contaminates the machine. 
@@ -45,6 +36,16 @@ brew install automake
 # Libtool
 brew install libtool
 ```
+
+## Rectangle
+
+Install and configure [Rectangle](https://github.com/rxhanson/Rectangle), a great window manager for macOS.
+
+* Run `brew cask install rectangle`
+* Start Rectangle
+    * Allow it Accessibility permissions.
+* Enable Rectangle > Preferences > Launch Spectacle at login
+
 
 ## Set up SSH keys for Github
 
