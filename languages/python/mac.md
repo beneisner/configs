@@ -19,6 +19,13 @@ pyenv install 3.8.1
 
 # Make sure that it goes in the local zshrc! Otherwise you can't do anything.
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc.local
+
+# Virtualenvs via pyenv-virtualenv
+git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+
+# Put it there.
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc.local
+
 ```
 
 3. Dependency management in Python is trash. Use poetry, because it attempts to mask the smell.
