@@ -6,7 +6,7 @@
     "bazel.executable": "bazel",
     "bazel.buildifierExecutable": "buildifier",
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-    "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
     "latex-workshop.view.pdf.viewer": "tab",
     "explorer.confirmDelete": false,
 }
