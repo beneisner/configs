@@ -85,10 +85,19 @@ pip3 install --user powerline-status
 zsh is a shell built on top of bash that has some nice features.
 ```
 # Install zsh.
-brew install zsh
+sudo apt-get install zsh
+
+# Make it the default shell.
+chsh -s /bin/zsh
 
 # Symlink the zsh config.
 ln -s ~/code/configs/.zshrc ~/.zshrc
+```
+
+### Oh My ZSH
+```
+# Download and Oh My zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 ```
 
 #### Oh My ZSH Fonts - Powerline
@@ -109,6 +118,13 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 Autosuggestions that can be completed with the right arrow key.
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+#### Powerlevel10k
+
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 ```
 
 
