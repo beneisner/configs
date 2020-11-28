@@ -13,7 +13,7 @@ Add the following to your `.zshrc.local`:
 Note: this may change version to version.
 
 ```
-export PATH="/home/baeisner/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
