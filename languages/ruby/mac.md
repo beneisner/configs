@@ -31,6 +31,9 @@ You're probably here so that you can use Jekyll locally. It's dumb I know. Other
 # Install things.
 gem install jekyll bundler
 
+# Install the bundler jekyll.
+bundle add jekyll
+
 # Run Jekyll.
 cd <website directory>
 bundle exec jekyll serve
