@@ -10,7 +10,8 @@ brew install rbenv
 eval "$(rbenv init -)"
 
 # Verify installation.
-curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash```
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
+```
 
 ## Install a ruby.
 
