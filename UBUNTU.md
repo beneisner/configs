@@ -90,8 +90,8 @@ sudo apt-get install zsh
 # Make it the default shell.
 chsh -s /bin/zsh
 
-# Symlink the zsh config.
-ln -s ~/code/configs/.zshrc ~/.zshrc
+# Create a base ZSH file, which imports the relevant configs from the zsh directory. See the provided .zshrc
+vim ~/.zshrc
 ```
 
 ### Oh My ZSH
