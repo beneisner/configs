@@ -6,8 +6,8 @@
 # Install rbenv.
 brew install rbenv
 
-# Append the following to .zshrc.local
-eval "$(rbenv init -)"
+# Append the following to .zshrc
+source ${CONFIG_DIR}/languages/ruby/ruby.zshrc
 
 # Verify installation.
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
