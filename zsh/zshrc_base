@@ -22,6 +22,23 @@ ENABLE_CORRECTION="true"
 # zsh-syntax-highlighting is really slow on paste, so let's cut it down to size.
 ZSH_HIGHLIGHT_MAXLENGTH=100
 
+# Use TMUX on every start, unless we're SSH-ing in.
+if [[ -n $SSH_CONNECTION ]]; then
+  ZSH_TMUX_AUTOSTART=false
+# Use TMUX on every start, except when using the vscode terminal.
+elif [ "$TERM_PROGRAM" = "vscode" ]; then 
+  ZSH_TMUX_AUTOSTART=false
+else
+  ZSH_TMUX_AUTOSTART=true
+fi
+
+# Optional tmux integration with iTerm2, but I don't really like it...
+# if [[ $TERM_PROGRAM = "iTerm.app" ]]; then
+#   ZSH_TMUX_ITERM2=true
+# else
+#   ZSH_TMUX_ITERM2=false
+# fi
+
 # Vim.
 export EDITOR='vim'
 
