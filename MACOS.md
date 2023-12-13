@@ -76,7 +76,7 @@ ln -s ~/code/configs/vscode/settings.json ~/Library/Application\ Support/Code/Us
 
 iTerm2 is a great terminal replacement for macOS. I'm not sure why but everyone says it is and that's great.
 
-`brew cask install iterm2`
+`brew install --cask iterm2`
 
 Allow it Accessibility permissions.
 
@@ -88,6 +88,10 @@ Download some slick iTerm2 color schemes.
 cd ~/code
 git clone https://github.com/mbadolato/iTerm2-Color-Schemes
 ```
+
+Install them by following instructions [here](https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#installation-instructions).
+
+Currently using tokyonight.
 
 ## tmux
 
@@ -106,14 +110,8 @@ Use the TMUX Plugin Manager [https://github.com/tmux-plugins/tpm](link).
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
-## Powerline
 
-Powerline is going to be useful for tmux and for vim, so let's install it now.
-
-```
-# Install the package.
-pip3 install --user powerline-status
-```
+We have several plugins installed, including powerline.
 
 ## zsh
 
@@ -203,18 +201,10 @@ Install Buildifier.
 https://github.com/bazelbuild/buildtools/blob/master/buildifier/README.md
 ```
 
-## Backup and Sync
-https://www.google.com/drive/download/backup-and-sync/
+## Other Apps
 
-## Boxy Suite (Gmail and Calendar)
-https://www.boxysuite.com/
-
-## Mendeley
-https://www.mendeley.com/download-desktop/
-
-## SSHFS + Fuse
-
-For mounting remote filesystems.
-* brew cask install osxfuse
-* brew install sshfs
-* https://osxfuse.github.io/
+* Spotify
+* Google Drive
+* Slack
+* Fantastical
+* Mimestream
