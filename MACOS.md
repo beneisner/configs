@@ -91,7 +91,7 @@ git clone https://github.com/mbadolato/iTerm2-Color-Schemes
 
 Install them by following instructions [here](https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#installation-instructions).
 
-Currently using tokyonight.
+Currently using Sakura.
 
 ## tmux
 
@@ -162,24 +162,18 @@ Pretty slick.
 
 ```git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k```
 
-```ln -s .p10k.zsh ~/.p10k.zsh```
+Manually install the fonts:
+https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#meslo-nerd-font-patched-for-powerlevel10k
 
-#### Bazel completion
+Edit the iterm2 profile appropriately.
 
-TODO: THIS LINK IS BROKEN: FIX.
+
+#### Install the TPM Plugins.
+
+In tmux:
 ```
-git clone https://github.com/jackwish/bazel ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/bazel
+Ctrl+A Shift+I
 ```
-
-### Initialize completion/
-
-```
-compinit
-```
-
-## Set iTerm2 to point to our custom preferences.
-* iTerm2 > Preferences > General > Load preferences from a custom folder or URL -> Enable, ~/code/configs/iterm2
-* iTerm2 > Preferences > General > Save current settings to folder when iTerm2 quits -> Enable
 
 ## XCode
 
@@ -188,17 +182,15 @@ sudo xcodebuild -license accept
 ```
 
 
-## Install Bazel
+## Install Bazel (managed by Bazelisk)
 
 ```
-# Install from Homebrew.
-brew tap bazelbuild/tap
-brew install bazelbuild/tap/bazel
+brew install bazelisk
 ```
 
 Install Buildifier.
 ```
-https://github.com/bazelbuild/buildtools/blob/master/buildifier/README.md
+brew install buildifier
 ```
 
 ## Other Apps
