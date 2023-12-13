@@ -1,13 +1,1 @@
-{
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.pythonPath": "/usr/local/bin/python3",
-    "terminal.external.osxExec": "iTerm.app",
-    "bazel.executable": "bazel",
-    "bazel.buildifierExecutable": "buildifier",
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-    "terminal.integrated.fontFamily": "MesloLGS NF",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "explorer.confirmDelete": false,
-    "security.workspace.trust.untrustedFiles": "open"
-}
+{}

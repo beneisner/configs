@@ -9,7 +9,7 @@ plugins=(
   poetry
 )
 
-CONFIG_DIR=/Users/beisner/code/configs
+CONFIG_DIR=${HOME}/code/configs
 
 source ${CONFIG_DIR}/zsh/zshrc_base
 source ${CONFIG_DIR}/zsh/fast_paste_rc
