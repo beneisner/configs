@@ -113,6 +113,12 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 We have several plugins installed, including powerline.
 
+#### Powerline themes.
+
+```
+ln -s ~/code/configs/tmux-powerline/config.sh ~/.config/tmux-powerline/config.sh
+```
+
 ## zsh
 
 zsh is a shell built on top of bash that has some nice features.
