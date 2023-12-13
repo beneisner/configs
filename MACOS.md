@@ -22,26 +22,14 @@ Brew is the de-facto standard package manager for macOS. We'll install some basi
 # Install git, overriding the system default so we can get frequent updates.
 brew install git
 
-# Install python3, which is used by various code editors and tools.
-# This version should ***NOT*** be used for actually running code we wrote;
-# we leave that to the isolated dev environments.
-brew install python3
-
-# Install cmake. It's useful sometimes.
-brew install cmake
-
-# Autotools :(
-brew install automake
-
-# Libtool
-brew install libtool
+brew install htop
 ```
 
 ## Rectangle
 
 Install and configure [Rectangle](https://github.com/rxhanson/Rectangle), a great window manager for macOS.
 
-* Run `brew cask install rectangle`
+* Run `brew install --cask rectangle`
 * Start Rectangle
     * Allow it Accessibility permissions.
 * Enable Rectangle > Preferences > Launch Spectacle at login
@@ -51,14 +39,10 @@ Install and configure [Rectangle](https://github.com/rxhanson/Rectangle), a grea
 
 Adding SSH keys means we don't have to enter our username/password every time. macOS does a good job of storing passphrases in the keychain.
 
-1) Add SSH key to account ([Instructions](https://help.github.com/en/articles/connecting-to-github-with-ssh))
-    * `ssh-keygen -t rsa -b 4096 -C "ben.a.eisner@gmail.com"`
-        * Default location is fine.
-        * Save a passphrase in 1Password.
-    * Add to Github account.
-2) Add SSH key to keychain ([Instructions](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent))
-    * Create/modify ~/.ssh/config using provided Hosts.
-    * `ssh-add -K ~/.ssh/id_rsa`, and enter passphrase. This stores the passphrase in the keychain.
+1. [Check for existing SSH Key.](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+2. If none exists, [Generate a new SSH Key.](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+3. [Add SSH Key to the agent.](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
+4. [Add the SSH key to your Github account.](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ## Bootstrap dev machine
 
