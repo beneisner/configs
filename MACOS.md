@@ -128,6 +128,9 @@ brew install zsh
 
 # Symlink the zsh config.
 ln -s ~/code/configs/.zshrc ~/.zshrc
+
+# Add Homebrew ZSH to list of shells.
+https://github.com/fish-shell/fish-shell/issues/989#issuecomment-139900718
 ```
 
 ### Oh My ZSH
