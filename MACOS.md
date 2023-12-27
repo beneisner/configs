@@ -139,7 +139,7 @@ Oh My ZSH is a package manager for zsh. It's got a lot of stars on github. We do
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 # Change the default shell to zsh.
-chsh -s /bin/zsh
+chsh -s /opt/homebrew/bin/zsh
 ```
 
 #### Oh My ZSH Fonts - Powerline
