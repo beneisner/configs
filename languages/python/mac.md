@@ -1,46 +1,17 @@
 # Configure a Python environment on mac OS.
 
-TODO: Decide if this should be standard.
-
-1. Install Python at the system level.
+1. Use pyenv to manage your python versions for real.
 
 ```
-brew install python
-```
-
-2. The system Python is trash. Use pyenv to manage your python versions for real.
-
-```
-# Install pyenv.
+# Install pyenv and pyenv-virtualenv
 brew install pyenv
+brew install pyenv-virtualenv
 
 # Install the latest version of Python, or whatever Python you want.
-pyenv install 3.8.1
-
-# Make sure that it goes in the local zshrc! Otherwise you can't do anything.
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc.local
-
-# Virtualenvs via pyenv-virtualenv
-git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
-
-# Put it there.
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc.local
-
+pyenv install <version>
 ```
 
-3. Dependency management in Python is trash. Use poetry, because it attempts to mask the smell.
-
+Then add the following to your .zshrc.
 ```
-# Install poetry.
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-
-# Put poetry in the path.
-echo 'export PATH=$HOME/.poetry/bin:$PATH' >> ~/.zshrc.local
-
-# Source.
-source ~/.zshrc
-
-# Install the zsh completions.
-mkdir $ZSH/plugins/poetry
-poetry completions zsh > $ZSH/plugins/poetry/_poetry
+source ${CONFIG_DIR}/languages/python/python.zshrc
 ```
