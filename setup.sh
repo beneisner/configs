@@ -302,14 +302,16 @@ function setup_python() {
     # "source ${CONFIG_DIR}/languages/python/python.zsh"
     echo "Adding source line to $ZDOTDIR/.zshrc..."
     if ! grep -q "source ${BEN_CONFIG_DIR}/languages/python/python.zsh" $ZDOTDIR/.zshrc; then
-        echo "\nsource ${BEN_CONFIG_DIR}/languages/python/python.zsh" >> $ZDOTDIR/.zshrc
+        echo "" >> $ZDOTDIR/.zshrc
+        echo "source ${BEN_CONFIG_DIR}/languages/python/python.zsh" >> $ZDOTDIR/.zshrc
     else
-        echo "\nsource line already exists in $ZDOTDIR/.zshrc, skipping..."
+        echo "source line already exists in $ZDOTDIR/.zshrc, skipping..."
     fi
 
     echo "Adding source line to $ZDOTDIR/.zprofile..."
     if ! grep -q "source ${BEN_CONFIG_DIR}/languages/python/python.zsh" $ZDOTDIR/.zprofile; then
-        echo "\nsource ${BEN_CONFIG_DIR}/languages/python/python.zsh" >> $ZDOTDIR/.zprofile
+        echo "" >> $ZDOTDIR/.zprofile
+        echo "source ${BEN_CONFIG_DIR}/languages/python/python.zsh" >> $ZDOTDIR/.zprofile
     else
         echo "source line already exists in $ZDOTDIR/.zprofile, skipping..."
     fi
