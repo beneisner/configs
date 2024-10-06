@@ -3,14 +3,6 @@ My personal config files, for use when setting up a new computer.
 
 # macOS setup
 
-## macOS Preferences
-
-Preferences that can be found in System Preferences.
-
-* System Preferences > Keyboard > Modifier Keys > Caps Lock Key -> Control
-* System Preferences > Keyboard > Key Repeat -> Fast
-* System Preferences > Keyboard > Delay until Repeat -> Short
-* Enable System Preferences > Trackpad > Point & Click > Tap to Click
 
 ## Brew
 
