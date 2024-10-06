@@ -3,8 +3,8 @@ My personal config files, for use when setting up a new computer.
 
 # Table of Contents
 [Installation](#installation)  
-[macOS setup](#macos-setup)  
-[Ubuntu setup](#ubuntu-setup)  
+[macOS setup](#macos-specific-details)  
+[Ubuntu setup](#ubuntu-specific-details)  
 
 
 # Installation
