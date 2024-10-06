@@ -22,6 +22,14 @@ cd configs
 ./setup.sh
 ```
 
+TODO: Add all languages to the script.
+* direnv
+* ruby
+* perl
+* latex
+* node
+* go
+
 # SSH Keys.
 
 Adding SSH keys means we don't have to enter our username/password every time. macOS does a good job of storing passphrases in the keychain.
