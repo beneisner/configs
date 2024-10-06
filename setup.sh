@@ -256,7 +256,7 @@ else
 fi
 
 # Install TPM
-if [ ! -d $XDG_DATA_HOME/tmux/plugins/tpm ]; then
+if [ ! -d $XDG_CONFIG_HOME/tmux/plugins/tpm ]; then
     echo "Installing TPM..."
     mkdir -p $XDG_CONFIG_HOME/tmux/plugins
     git clone https://github.com/tmux-plugins/tpm $XDG_CONFIG_HOME/tmux/plugins/tpm
@@ -266,6 +266,7 @@ fi
 
 # Link tmux-powerline config
 echo "Linking $BEN_CONFIG_DIR/tmux-powerline/config.sh to $XDG_CONFIG_HOME/tmux-powerline/config.sh..."
+mkdir -p $XDG_CONFIG_HOME/tmux-powerline
 if [ -f $XDG_CONFIG_HOME/tmux-powerline/config.sh ] && ! ask_user "$XDG_CONFIG_HOME/tmux-powerline/config.sh exists. Do you want to overwrite $XDG_CONFIG_HOME/tmux-powerline/config.sh?"; then
     echo "Skipping linking $XDG_CONFIG_HOME/tmux-powerline/config.sh..."
 else
