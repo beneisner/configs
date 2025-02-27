@@ -9,11 +9,15 @@ fi
 if [[ -n $SSH_CONNECTION ]]; then
   ZSH_TMUX_AUTOSTART=false
 # Use TMUX on every start, except when using the vscode terminal.
-elif [ "$TERM_PROGRAM" = "vscode" ]; then 
+elif [ "$TERM_PROGRAM" = "vscode" ] || [ "$TERM_PROGRAM" = "zed" ]; then 
+  ZSH_TMUX_AUTOSTART=false
+elif [[ ! -t 0 ]]; then
+  # Not running in a terminal
   ZSH_TMUX_AUTOSTART=false
 else
   ZSH_TMUX_AUTOSTART=true
 fi
+
 
 # Compinit configuration.
 zstyle ':plugin:ez-compinit' 'compstyle' 'prez'
