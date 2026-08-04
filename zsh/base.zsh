@@ -18,6 +18,9 @@ else
   ZSH_TMUX_AUTOSTART=true
 fi
 
+# So that Shift+Enter is fine (needed for claude code and other things in tmux
+bindkey '^[[13;2u' accept-line
+
 
 # Compinit configuration.
 zstyle ':plugin:ez-compinit' 'compstyle' 'prez'
@@ -28,3 +31,4 @@ antidote load
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
