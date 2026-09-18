@@ -27,7 +27,9 @@ zstyle ':plugin:ez-compinit' 'compstyle' 'prez'
 
 # Load antidote.
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
-antidote load
+# Bundle list is shared config; the generated static file points into the machine-local
+# plugin cache, so it must be machine-local too (shared home on the NAS).
+antidote load ${ZDOTDIR:-~}/.zsh_plugins.txt ${XDG_CACHE_HOME:-$HOME/.cache}/antidote/.zsh_plugins.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
